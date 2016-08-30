@@ -1,0 +1,17 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:b='urn:import:org.gwtbootstrap3.client.ui'>
+    <g:HTMLPanel styleName="login-view">
+        <b:Label styleName="label">LOGIN</b:Label>
+        <b:FormGroup>
+            <b:FormLabel ui:field="userLabel" for="user">UserName</b:FormLabel>
+            <b:Input ui:field="userInput" allowBlank="false" type="TEXT" b:id="user"/>
+            <b:FormLabel ui:field="passwordLabel" for="password">Password</b:FormLabel>
+            <b:Input ui:field="passwordInput" allowBlank="false" type="PASSWORD" b:id="password"/>
+            <b:Button ui:field="loginButton" b:id="login">LOGIN</b:Button>
+        </b:FormGroup>
+    </g:HTMLPanel>
+</ui:UiBinder>

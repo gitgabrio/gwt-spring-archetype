@@ -10,7 +10,7 @@ import ${package}.client.requestfactory.FactoryFactory;
 /**
  * The abstract class AbstractLoginView
  */
-public abstract class AbstractLoginView extends Composite {
+public abstract class AbstractLoginComponent extends Composite {
 
     /**
      * The Authentication factory.

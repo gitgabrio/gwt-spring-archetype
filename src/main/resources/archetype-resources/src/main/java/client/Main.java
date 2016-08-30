@@ -89,7 +89,7 @@ public class Main implements EntryPoint, CustomerLoginEvent.CustomerLoginHandler
     private void showLoginScreen() {
         RootPanel content = RootPanel.get("content");
         content.clear();
-        LoginScreen loginScreen = new LoginScreen();
+        LoginView loginScreen = new LoginView();
         content.add(loginScreen);
     }
 
