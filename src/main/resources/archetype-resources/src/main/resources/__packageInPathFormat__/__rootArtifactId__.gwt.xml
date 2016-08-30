@@ -1,0 +1,35 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='${artifactId}'>
+
+  <add-linker name="xsiframe"/>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User' />
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  <inherits name='com.google.gwt.user.theme.standard.Standard' />
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+  <!-- GwtBootstrap3 -->
+  <inherits name="org.gwtbootstrap3.GwtBootstrap3"/>
+  <inherits name="org.gwtbootstrap3.extras.datepicker.DatePicker"/>
+  <inherits name="org.gwtbootstrap3.extras.slider.Slider"/>
+  <inherits name="org.gwtbootstrap3.extras.select.Select"/>
+  <inherits name="org.gwtbootstrap3.extras.datetimepicker.DateTimePicker"/>
+  <inherits name="org.gwtbootstrap3.GwtBootstrap3Theme"/>
+  <inherits name="com.google.web.bindery.requestfactory.RequestFactory"/>
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='${package}.client.Main' />
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client' />
+  <source path='shared' />
+
+</module>
