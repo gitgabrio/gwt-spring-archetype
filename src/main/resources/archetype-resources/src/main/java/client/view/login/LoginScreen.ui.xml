@@ -9,7 +9,7 @@
         <b:Container fluid="true" styleName="login-view">
             <b:Row>
                 <b:Column size="MD_4">
-                    <login:LoginView ui:field="fakeLoginView"/>
+                    <login:LoginView ui:field="loginView"/>
                 </b:Column>
             </b:Row>
         </b:Container>
